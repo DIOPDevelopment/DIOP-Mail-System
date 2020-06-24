@@ -1,0 +1,11 @@
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\bin\Debug\DIOP Mail.exe.config
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\bin\Debug\DIOP Mail.exe
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\bin\Debug\DIOP Mail.pdb
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\obj\Debug\DIOP Mail.csprojAssemblyReference.cache
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\obj\Debug\DIOP_Mail.Form1.resources
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\obj\Debug\DIOP_Mail.Properties.Resources.resources
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\obj\Debug\DIOP Mail.csproj.GenerateResource.cache
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\obj\Debug\DIOP Mail.csproj.CoreCompileInputs.cache
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\obj\Debug\DIOP Mail.exe
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\obj\Debug\DIOP Mail.pdb
+C:\Users\reald\source\repos\DIOP Mail\DIOP Mail\obj\Debug\DIOP_Mail.mailSettings.resources
