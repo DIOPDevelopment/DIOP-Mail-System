@@ -20,3 +20,4 @@ C:\Users\reald\Documents\GitHub\DIOP-Mail-System\DIOP Mail\DIOP Mail\obj\Debug\D
 C:\Users\reald\Documents\GitHub\DIOP-Mail-System\DIOP Mail\DIOP Mail\obj\Debug\DIOP Mail.csproj.CoreCompileInputs.cache
 C:\Users\reald\Documents\GitHub\DIOP-Mail-System\DIOP Mail\DIOP Mail\obj\Debug\DIOP Mail.exe
 C:\Users\reald\Documents\GitHub\DIOP-Mail-System\DIOP Mail\DIOP Mail\obj\Debug\DIOP Mail.pdb
+C:\Users\reald\Documents\GitHub\DIOP-Mail-System\DIOP Mail\DIOP Mail\obj\Debug\DIOP_Mail.Login.resources

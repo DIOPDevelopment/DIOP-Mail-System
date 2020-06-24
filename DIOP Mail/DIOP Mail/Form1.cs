@@ -16,9 +16,11 @@ namespace DIOP_Mail
         NetworkCredential login;
         SmtpClient client;
         MailMessage msg;
+        mailSettings settings;
         public Form1()
         {
             InitializeComponent();
+            this.settings = new mailSettings();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -69,21 +71,24 @@ namespace DIOP_Mail
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            mailSettings settings = new mailSettings();
+            this.settings = new mailSettings();
             settings.Show();
         }
 
         private void btnSend_Click_1(object sender, EventArgs e)
         {
-            string txtSMTP = "smtp.gmail.com";
-            int txtPort = 587;
+            string txtSMTP = settings.SMTP;
+            string txtPort = settings.Port;
+            bool useSSL = settings.Ssl;
+            string email = Login.email;
+            string pass = Login.pass;
 
-            login = new NetworkCredential(txtUsername.Text, txtPassword.Text);
+            login = new NetworkCredential(email, pass);
             client = new SmtpClient(txtSMTP);
             client.Port = Convert.ToInt32(txtPort);
-            client.EnableSsl = true;
+            client.EnableSsl = useSSL;
             client.Credentials = login;
-            msg = new MailMessage { From = new MailAddress(txtUsername.Text + txtSMTP.Replace("smtp.", "@"), "", Encoding.UTF8) };
+            msg = new MailMessage { From = new MailAddress(email + txtSMTP.Replace("smtp.", "@"), "DIOP Development", Encoding.UTF8) };
             msg.To.Add(new MailAddress(txtTO.Text));
             if (!string.IsNullOrEmpty(txtCC.Text))
                 msg.To.Add(new MailAddress(txtCC.Text));
@@ -96,6 +101,14 @@ namespace DIOP_Mail
             client.SendCompleted += new SendCompletedEventHandler(SendCompletedCallback);
             string userstate = "Sending...";
             client.SendAsync(msg, userstate);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            mailSettings settings = new mailSettings();
+            settings.Show();
+
         }
     }
 }
