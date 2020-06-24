@@ -83,7 +83,7 @@ namespace DIOP_Mail
             client.Port = Convert.ToInt32(txtPort);
             client.EnableSsl = true;
             client.Credentials = login;
-            msg = new MailMessage { From = new MailAddress(txtUsername.Text + txtSMTP.Replace("smtp.", "@"), "Lucy", Encoding.UTF8) };
+            msg = new MailMessage { From = new MailAddress(txtUsername.Text + txtSMTP.Replace("smtp.", "@"), "", Encoding.UTF8) };
             msg.To.Add(new MailAddress(txtTO.Text));
             if (!string.IsNullOrEmpty(txtCC.Text))
                 msg.To.Add(new MailAddress(txtCC.Text));
